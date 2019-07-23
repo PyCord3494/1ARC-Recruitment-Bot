@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from discord.ext.commands import has_permissions
 
 import json
 
@@ -23,7 +22,7 @@ async def on_member_join(member):
 
 async def response(message):
 	if message.author.id != 603027473151819786 and message.channel.id == 588438854738903122:
-		with open(r"C:\Users\wilso\Desktop\1ARC-Recruitment-Bot\config.json", 'r') as f:
+		with open(r"C:\Users\Autopilot\Desktop\1ARC-Recruitment-Bot\config.json", 'r') as f:
 			config = json.load(f)
 
 		allyMsg = config["allyMsg"]
