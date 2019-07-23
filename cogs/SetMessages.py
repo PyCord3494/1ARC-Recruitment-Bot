@@ -11,7 +11,7 @@ class SetMessage(commands.Cog):
 
 	@commands.command()
 	@has_permissions(administrator=True)
-	async def setally(self, ctx, message):
+	async def setally(self, ctx, *, message):
 		with open(r"C:\Users\wilso\Desktop\1ARC-Recruitment-Bot\config.json", 'r') as f:
 			config = json.load(f)
 
@@ -25,7 +25,7 @@ class SetMessage(commands.Cog):
 
 	@commands.command()
 	@has_permissions(administrator=True)
-	async def setjoin(self, ctx, message):
+	async def setjoin(self, ctx, *, message):
 		with open(r"C:\Users\wilso\Desktop\1ARC-Recruitment-Bot\config.json", 'r') as f:
 			config = json.load(f)
 
